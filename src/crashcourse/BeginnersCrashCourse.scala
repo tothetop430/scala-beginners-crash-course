@@ -13,4 +13,14 @@ object BeginnersCrashCourse extends App {
   val lng2 = 123L   //Make sure to put L to let compiler know that it is of type Long
   val flt: Float = 123.0f   //Make sure to put f at the end of float values
   val dbl: Double = 123.0   //Otherwise compiler will infer it as a type of double
+
+  // Methods
+  def greetings(name: String): String = "Hello " + name
+  println(greetings("Siddharth"))
+
+  def greetingsModified(name: String): Unit = println("Hello " + name)
+  greetingsModified("Sid")
+
+  def greetingsFromSystem: Unit = println("Hello, you are learning Scala!")
+  greetingsFromSystem
 }
